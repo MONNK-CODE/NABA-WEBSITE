@@ -1,10 +1,10 @@
 :root{
-    /* Palette close to your hexes; includes accents for cards/pills */
-    --naba-green:#336633;   /* ~#36602E */
-    --naba-purple:#5B2A91;  /* ~#652D90 */
-    --naba-gold:#f6b400;    /* ~#fcb900 */
+    --naba-green:#336633;
+    --naba-purple:#5B2A91;
+    --naba-gold:#f6b400;
     --accent-1: rgba(91,42,145,.18);
     --accent-2: #ffd36b;
+    --uiuccolor: #FF5F05;
     --surface:#0f1116;
     --surface-2:#161922;
     --text:#e9edf1;
