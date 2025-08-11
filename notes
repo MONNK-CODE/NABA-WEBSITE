@@ -1,0 +1,13 @@
+<section class="container py-5 text-center" aria-labelledby="story-video-heading">
+    <h2 id="story-video-heading" class="mb-4">Watch Our Story</h2>
+    <div class="ratio ratio-16x9">
+        <iframe
+                src="https://www.youtube.com/embed/jtdHuXcu3J0?rel=0"
+                title="NABA UIUC: Our Story"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+    </div>
+</section>

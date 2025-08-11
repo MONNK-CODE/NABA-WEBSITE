@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>NABA UIUC Chapter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="#home">
+      <img src="photos/logo.jpeg" alt="NABA UIUC logo" />
+      <span>NABA UIUC</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="menu" id="menu" aria-label="Primary">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#events">Current Events</a>
+      <a class="nav-link" href="#prospective">Prospective Students</a>
+      <a class="nav-link" href="sponsors.html">Sponsors</a>
+      <a class="nav-link" href="#board">Executive Board</a>
+      <a class="nav-link" href="#contact">Contact Us</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="icon-link" href="https://www.instagram.com/nabauiuc/" target="_blank" aria-label="Instagram" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 6.25z"/></svg>
+      </a>
+    </div>
+  </nav>
+  <div class="mobile" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#events">Current Events</a>
+    <a href="#prospective">Prospective Students</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="#board">Executive Board</a>
+    <a href="#contact">Contact Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="https://www.instagram.com/nabauiuc/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <img class="bg" src="photos/group.jpg" alt="NABA group background">
+  <div class="content">
+    <h1>National Association of Black Accountants</h1>
+    <h2>UIUC Chapter</h2>
+    <div class="hero-buttons">
+      <a href="#join" class="btn btn-gold">Join NABA</a>
+      <a href="#events" class="btn btn-gold">Events</a>
+      <a href="#contact" class="btn btn-gold">Contact NABA UIUC</a>
+    </div>
+  </div>
+</section>
+
+<!-- About / Mission / President -->
+<section class="section" id="about">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <h3>About Us</h3>
+        <p>
+          NABA UIUC is a student chapter of the National Association of Black Accountants. We connect students with career opportunities, professional development, and a strong community across accounting, finance, consulting, data, and related fields.
+        </p>
+      </div>
+    </div>
+    <div class="col-6" id="prospective">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          To lift as we climb—expanding the pipeline of Black talent, providing mentorship and resources, and advocating for representation in business. We host networking events, technical workshops, case competitions, and community service initiatives throughout the year.
+        </p>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card president">
+        <img src="photos/head.jpg" alt="Chapter President">
+        <div>
+          <h3>President’s Letter</h3>
+          <p>
+            Welcome to NABA UIUC! We’re excited to support your growth and help you find your path in business. Whether you’re exploring majors or preparing for internships, there’s a place for you here. Join an event, meet the board, and let’s build together.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section class="section" id="video">
+  <div class="card">
+    <h3>Watch Our Story</h3>
+    <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="NABA UIUC Intro Video" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Current Events (card grid format) -->
+<section id="events">
+  <div class="wrap">
+    <h2 class="section-title">Current Events</h2>
+    <div class="events-grid">
+      <article class="card event">
+        <span class="pill">Aug 29 • 6:00 PM</span>
+        <h4>Fall Kickoff & Info Night</h4>
+        <p class="muted">Meet the e‑board, hear about programs, and connect with sponsors.</p>
+      </article>
+      <article class="card event">
+        <span class="pill">Sep 5 • 5:30 PM</span>
+        <h4>Resume & LinkedIn Workshop</h4>
+        <p class="muted">Get review support from upperclassmen and alumni.</p>
+      </article>
+      <article class="card event">
+        <span class="pill">Sep 12 • 6:00 PM</span>
+        <h4>Corporate Panel: Audit vs. Advisory</h4>
+        <p class="muted">Hear from firm reps and ask questions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Executive Board (unchanged) -->
+<section class="section" id="board">
+  <h3 class="section-title">Executive Board</h3>
+  <div class="board-grid">
+    <div class="member">
+      <img src="photos/head.jpg" alt="Board Member">
+      <h4>Member Name</h4>
+      <small>Position</small>
+      <a class="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8h4v13H3zM9 8h4v2h.06A4.39 4.39 0 0 1 17 8c3 0 5 2 5 5.7V21h-4v-6.1c0-1.6-.57-2.7-2-2.7a2.16 2.16 0 0 0-2 1.5 2.73 2.73 0 0 0-.1.95V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div class="member">
+      <img src="photos/head.jpg" alt="Board Member">
+      <h4>Member Name</h4>
+      <small>Position</small>
+      <a class="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8h4v13H3zM9 8h4v2h.06A4.39 4.39 0 0 1 17 8c3 0 5 2 5 5.7V21h-4v-6.1c0-1.6-.57-2.7-2-2.7a2.16 2.16 0 0 0-2 1.5 2.73 2.73 0 0 0-.1.95V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div class="member">
+      <img src="photos/head.jpg" alt="Board Member">
+      <h4>Member Name</h4>
+      <small>Position</small>
+      <a class="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8h4v13H3zM9 8h4v2h.06A4.39 4.39 0 0 1 17 8c3 0 5 2 5 5.7V21h-4v-6.1c0-1.6-.57-2.7-2-2.7a2.16 2.16 0 0 0-2 1.5 2.73 2.73 0 0 0-.1.95V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div class="member">
+      <img src="photos/head.jpg" alt="Board Member">
+      <h4>Member Name</h4>
+      <small>Position</small>
+      <a class="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8h4v13H3zM9 8h4v2h.06A4.39 4.39 0 0 1 17 8c3 0 5 2 5 5.7V21h-4v-6.1c0-1.6-.57-2.7-2-2.7a2.16 2.16 0 0 0-2 1.5 2.73 2.73 0 0 0-.1.95V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / Contact (your format) -->
+<section id="contact" class="cta">
+  <div class="wrap">
+    <h2 class="section-title">Still have questions? <span style="color:var(--accent-2)">Go Illini!</span></h2>
+    <p class="muted">We respond fast — reach us anytime.</p>
+    <p><a class="btn btn-primary" href="mailto:uiucnaba@gmail.com">Email: uiucnaba@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- Footer (your format) -->
+<footer>
+  <div class="foot">
+    <small>© <span id="year"></span> NABA UIUC Chapter. All rights reserved.</small>
+    <div class="social">
+      <a href="https://www.instagram.com/nabauiuc/" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.5"/><path d="M16.5 11.999a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Z" stroke="currentColor" stroke-width="1.5"/><circle cx="18.5" cy="5.5" r="1.25" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:uiucnaba@gmail.com" aria-label="Email uiucnaba@gmail.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Z" stroke="currentColor" stroke-width="1.5"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+</title>
+</head>
+<body>
+
+</body>
+</html>
