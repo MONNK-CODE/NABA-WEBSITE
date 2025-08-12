@@ -7,9 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>
+    // show page ASAP
+    document.body.classList.add('page-in');
+</script>
+
 <!-- Header -->
 <header class="header">
   <nav class="nav">
@@ -25,11 +31,23 @@
     <div class="menu" id="menu" aria-label="Primary">
       <a class="nav-link" href="#home">Home</a>
       <a class="nav-link" href="#events">Current Events</a>
-      <a class="nav-link" href="#prospective">Prospective Students</a>
-      <a class="nav-link" href="sponsors.html">Sponsors</a>
+      <a class="nav-link" href="join-naba.html">Prospective Students</a>
+
+        <a class="nav-link" href="sponsor-page/sponsors-prospective.html">Become a Sponsor</a>
+
+<!--        <div class="dropdown">-->
+<!--            <button class="dropdown-toggle nav-link" aria-haspopup="true" aria-expanded="false">-->
+<!--                Sponsors <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>-->
+<!--            </button>-->
+<!--            <div class="dropdown-menu" aria-label="Sponsors submenu">-->
+<!--                <a class="dropdown-item" href="sponsors-corporate.html">Corporate Sponsors</a>-->
+<!--                <a class="dropdown-item" href="sponsors-prospective.html">Prospective Sponsors</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
       <a class="nav-link" href="#board">Executive Board</a>
       <a class="nav-link" href="#contact">Contact Us</a>
-      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="gallery/gallery.html">Gallery</a>
       <a class="icon-link" href="https://www.instagram.com/nabauiuc/" target="_blank" aria-label="Instagram" rel="noopener">
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 6.25z"/></svg>
       </a>
@@ -38,11 +56,23 @@
   <div class="mobile" id="mobileMenu">
     <a href="#home">Home</a>
     <a href="#events">Current Events</a>
-    <a href="#prospective">Prospective Students</a>
-    <a href="sponsors.html">Sponsors</a>
+    <a href="join-naba.html">Prospective Students</a>
+      <a href="sponsor-page/sponsors-prospective.html">Become a Sponsor</a>
+
+<!--      <details class="m-dropdown">-->
+<!--          <summary>-->
+<!--              <span>Sponsors</span>-->
+<!--              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>-->
+<!--          </summary>-->
+<!--          <div class="m-menu">-->
+<!--              <a class="dropdown-item" href="sponsors-corporate.html">Corporate Sponsors</a>-->
+<!--              <a class="dropdown-item" href="sponsors-prospective.html">Prospective Sponsors</a>-->
+<!--          </div>-->
+<!--      </details>-->
+
     <a href="#board">Executive Board</a>
     <a href="#contact">Contact Us</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="gallery/gallery.html">Gallery</a>
     <a href="https://www.instagram.com/nabauiuc/" target="_blank" rel="noopener">Instagram</a>
   </div>
 </header>
@@ -54,9 +84,9 @@
     <h1>National Association of Black Accountants</h1>
     <h2>UIUC Chapter</h2>
     <div class="hero-buttons">
-      <a href="#join" class="btn btn-gold">Join NABA</a>
+      <a href="join-naba.html" class="btn btn-gold">Join NABA</a>
       <a href="#events" class="btn btn-gold">Events</a>
-      <a href="#contact" class="btn btn-gold">Contact NABA UIUC</a>
+      <a href="mailto:uiucnaba@gmail.com" class="btn btn-gold">Contact NABA</a>
     </div>
   </div>
 </section>
@@ -98,7 +128,7 @@
 <section class="section" id="video">
   <div class="card">
     <h3>Watch Our Story</h3>
-    <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" title="NABA UIUC Intro Video" allowfullscreen></iframe>
+    <iframe class="video" src="https://www.youtube.com/embed/jtdHuXcu3J0?rel=0" title="NABA UIUC Intro Video" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -126,7 +156,7 @@
   </div>
 </section>
 
-<!-- Executive Board (unchanged) -->
+<!-- Executive Board -->
 <section class="section" id="board">
   <h3 class="section-title">Executive Board</h3>
   <div class="board-grid">
@@ -139,6 +169,24 @@
         LinkedIn
       </a>
     </div>
+      <div class="member">
+          <img src="photos/head.jpg" alt="Board Member">
+          <h4>Member Name</h4>
+          <small>Position</small>
+          <a class="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8h4v13H3zM9 8h4v2h.06A4.39 4.39 0 0 1 17 8c3 0 5 2 5 5.7V21h-4v-6.1c0-1.6-.57-2.7-2-2.7a2.16 2.16 0 0 0-2 1.5 2.73 2.73 0 0 0-.1.95V21H9z"/></svg>
+              LinkedIn
+          </a>
+      </div>
+      <div class="member">
+          <img src="photos/head.jpg" alt="Board Member">
+          <h4>Member Name</h4>
+          <small>Position</small>
+          <a class="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8h4v13H3zM9 8h4v2h.06A4.39 4.39 0 0 1 17 8c3 0 5 2 5 5.7V21h-4v-6.1c0-1.6-.57-2.7-2-2.7a2.16 2.16 0 0 0-2 1.5 2.73 2.73 0 0 0-.1.95V21H9z"/></svg>
+              LinkedIn
+          </a>
+      </div>
     <div class="member">
       <img src="photos/head.jpg" alt="Board Member">
       <h4>Member Name</h4>
@@ -169,7 +217,7 @@
   </div>
 </section>
 
-<!-- CTA / Contact (your format) -->
+<!-- Contact -->
 <section id="contact" class="cta">
   <div class="wrap">
     <h2 class="section-title">Still have questions? <span style="color:var(--uiuccolor)">Go Illini!</span></h2>
@@ -178,7 +226,8 @@
   </div>
 </section>
 
-<!-- Footer (your format) -->
+
+<!-- Footer -->
 <footer>
   <div class="foot">
     <small>© <span id="year"></span> NABA UIUC Chapter. All rights reserved.</small>
@@ -194,16 +243,5 @@
 </footer>
 
 <script src="script.js"></script>
-</body>
-</html>
-
-
-
-
-
-</title>
-</head>
-<body>
-
-</body>
-</html>
+ </body>
+ </html>

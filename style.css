@@ -13,8 +13,19 @@
     --radius:18px;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--surface);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
+*{
+    box-sizing:border-box
+}
+html,body{
+    margin:0;
+    padding:0;background:var(--surface);
+    color:var(--text);
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+
 a{color:#c9b7ff;text-decoration:none}
 a:hover{text-decoration:underline}
 
@@ -109,7 +120,7 @@ footer{padding:18px 18px 32px;border-top:1px solid rgba(255,255,255,.08)}
 
 
 
-/*under uiuc chaper*/
+/*buttons under uiuc chapter*/
 .hero-buttons {
     margin-top: 16px;
     display: flex;
@@ -122,7 +133,7 @@ footer{padding:18px 18px 32px;border-top:1px solid rgba(255,255,255,.08)}
     padding: 10px 20px;
     font-weight: 700;
     font-size: 1rem;
-    border-radius: 999px; /* fully rounded like the screenshot */
+    border-radius: 999px;
     text-align: center;
     text-decoration: none;
     box-sizing: border-box;
@@ -137,4 +148,23 @@ footer{padding:18px 18px 32px;border-top:1px solid rgba(255,255,255,.08)}
 .btn-gold:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+
+
+/* Slide up + fade in on page load */
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    opacity: 0; /* start invisible */
+    animation: slideUpFadeIn 0.7s ease-out 0.2s forwards;
 }
