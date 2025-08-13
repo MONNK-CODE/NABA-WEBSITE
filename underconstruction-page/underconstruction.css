@@ -1,0 +1,85 @@
+:root{
+    --naba-gold:#FFD700;
+    --naba-green:#4CAF50;
+    --naba-dark:#0f0f10;
+    --naba-mid:#1a1b1e;
+    --text-dim:#c9c9c9;
+}
+html,body{height:100%;}
+body{
+    background: radial-gradient(1200px 800px at 10% -10%, #1e2027 0%, transparent 60%),
+    radial-gradient(1000px 800px at 110% 10%, #1a1b1f 0%, transparent 55%),
+    var(--naba-dark);
+    color:#fff;
+    font-family: system-ui, -apple-system, "Segoe UI";
+}
+.brand-lockup{
+    gap:.75rem;
+    align-items:center;
+}
+.brand-badge{
+    width:64px;
+    height:64px;
+    border-radius:12px;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+}
+.brand-badge img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.hero{
+    padding-top:8vh;
+    padding-bottom:6vh;
+}
+.glass{
+    background: rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(6px);
+    border-radius:1.25rem;
+}
+.countdown{
+    font-variant-numeric: tabular-nums;
+    letter-spacing:1px;
+    font-weight:700;
+    color:#fff;
+}
+.countdown .slot{
+    min-width:90px;
+    background:#141519;
+    border:1px solid #252730;
+    border-radius:.75rem;
+    padding:.9rem .8rem;
+}
+.countdown .label{
+    font-size:.75rem;
+    color:var(--text-dim);
+    letter-spacing:.06em;
+    text-transform:uppercase;
+}
+.progress{
+    height:.9rem;
+    background:#1a1c20;
+    border:1px solid #2a2d33;
+}
+.progress-bar {
+    background: linear-gradient(90deg, var(--naba-green), var(--naba-gold));
+}
+.muted{
+    color:var(--text-dim);
+}
+footer a{
+    color:var(--text-dim);
+    text-decoration:none;
+}
+footer a:hover {
+    color:#fff;
+}
+.social a {
+    color:var(--text-dim);
+}
+.social a:hover {
+    color:var(--naba-gold);
+}

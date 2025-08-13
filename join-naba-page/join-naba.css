@@ -1,0 +1,116 @@
+/* Prospective Students page */
+#prospective-students {
+    font-size: 1.16rem;
+    line-height: 1.75;
+}
+#prospective-students .lead {
+    font-size: 1.18rem;
+    max-width: 900px;
+    margin: 8px auto 0;
+}
+.big-title {
+    text-align: center;
+    margin: 0 0 8px;
+    color: var(--naba-gold);
+    font-weight: 800;
+    font-size: clamp(42px, 6vw, 64px);
+}
+
+/* Info banner */
+.info-banner{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    max-width:900px;
+    margin:16px auto 0;
+    padding:14px 16px;
+    border-radius:12px;
+    background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.08);
+}
+.info-banner i {
+    margin-top:3px;
+    color: var(--naba-gold);
+}
+
+/* Steps layout */
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:18px;
+}
+
+.step {
+    position:relative;
+}
+.step .step-num{
+    position:absolute;
+    top:-14px;
+    left:-14px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    font-weight:800;
+    background: rgba(246,180,0,.18);
+    border: 1px solid rgba(246,180,0,.45);
+    color:#ffe9b3;
+}
+.step h3{
+    margin:10px 0 6px;
+    font-size: clamp(20px, 2.4vw, 28px);
+}
+.step .hint{
+    display:block;
+    margin-top:8px;
+}
+
+/* Checklist */
+.checklist {
+    list-style:none;
+    padding:0;
+    margin:10px 0 0;
+}
+.checklist li{
+    display:flex;
+    gap:8px;
+    align-items:flex-start;
+    margin:6px 0;
+    color: var(--muted);
+}
+.checklist i{
+    margin-top:3px;
+    color: #c9e6c9;
+}
+
+/* Pills row */
+.pill-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px; }
+.pill{
+    display:inline-block;
+    background:rgba(246,180,0,.14);
+    border:1px solid rgba(246,180,0,.4);
+    color:#ffe9b3;
+    padding:6px 10px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:14px;
+}
+
+/* FAQ */
+.faq-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:18px;
+}
+
+/* Center small card content */
+.section.card.center {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}

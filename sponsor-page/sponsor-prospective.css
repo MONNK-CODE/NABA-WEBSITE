@@ -1,0 +1,77 @@
+/* Prospective Sponsors section */
+#prospective-sponsors .section-title {
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--naba-gold);
+    font-size: clamp(32px, 3.8vw, 46px);
+    font-weight: 800;
+}
+
+
+#prospective-sponsors {
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+#prospective-sponsors p,
+#prospective-sponsors li {
+    font-size: 1.15rem;
+}
+
+
+#prospective-sponsors p.muted {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#prospective-sponsors .cards-grid {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#prospective-sponsors .card {
+    width: 100%;
+    max-width: 670px; /* keeps them from stretching too wide */
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .02));
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: var(--shadow);
+}
+
+#prospective-sponsors h4 {
+    margin: 0 0 8px;
+    font-size: clamp(24px, 2.6vw, 32px);
+}
+
+#prospective-sponsors ul {
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 8px 0 0 20px;
+}
+
+#prospective-sponsors a.btn.btn-primary {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer height fix for short pages */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+

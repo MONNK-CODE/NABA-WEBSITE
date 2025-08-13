@@ -1,95 +1,237 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NABA UIUC — Coming Soon</title>
-
-    <!-- Bootstrap 5 + Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="Progress/underconstruction.css">
-
-
+ <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8" />
+<!--      <meta http-equiv="refresh" content="0; url=underconstruction-page/underconstruction.html">-->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>NABA UIUC Chapter</title>
+    <!-- Fonts & Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-progress="">
-<main class="container hero">
-    <div class="d-flex brand-lockup mb-3">
-        <div class="brand-badge">
-            <!-- Uses your file name exactly -->
-            <img src="photos/logo.jpeg" alt="NABA Logo">
-        </div>
+      <script>
+          const launchDate = new Date(2025, 8, 1, 17, 0); // Sep 1, 2025 @ 5:00 PM
+          const now = new Date();
+          if (now < launchDate) {
+              // Still before launch date → send to under construction
+              window.location.href = "underconstruction-page/underconstruction.html";
+          }
+      </script>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="#home">
+      <img src="photos/logo.jpeg" alt="NABA UIUC logo" />
+      <span>NABA<span style="color:var(--uiuccolor)"> UIUC</span></span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="menu" id="menu" aria-label="Primary">
+      <a class="nav-lin " href="index.html">Home</a>
+      <a class="nav-link" href="#events">Current Events</a>
+      <a class="nav-link" href="join-naba-page/join-naba.html">Prospective Students</a>
+      <a class="nav-link" href="sponsor-page/sponsors-prospective.html">Become a Sponsor</a>
+      <a class="nav-link" href="#board">Executive Board</a>
+      <a class="nav-link " href="#contact">Contact Us</a>
+      <a class="nav-link" href="gallery-page/gallery.html">Gallery</a>
+        <a class="icon-link" href="https://www.instagram.com/nabauiuc/" target="_blank" aria-label="Instagram" rel="noopener">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+  </nav>
+
+  <div class="mobile" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#events">Current Events</a>
+    <a href="join-naba-page/join-naba.html">Prospective Students</a>
+   <a href="sponsor-page/sponsors-prospective.html">Become a Sponsor</a>
+    <a href="#board">Executive Board</a>
+    <a href="#contact">Contact Us</a>
+    <a href="gallery-page/gallery.html">Gallery</a>
+    <a href="https://www.instagram.com/nabauiuc/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</header>
+
+<!-- Hero-Intro -->
+<section id="home" class="hero">
+  <img class="bg" src="photos/group.jpg" alt="NABA group background">
+  <div class="content">
+    <h1>National Association of Black Accountants</h1>
+    <h2 style="color:var(--uiuccolor);">University of Illinois Urbana-Champaign Chapter</h2>
+    <div class="hero-buttons">
+      <a href="join-naba-page/join-naba.html" class="btn btn-gold">Join NABA</a>
+      <a href="#events" class="btn btn-gold">Events</a>
+      <a href="mailto:uiucnaba@gmail.com" class="btn btn-gold">Contact NABA</a>
+    </div>
+  </div>
+</section>
+
+<!-- About / Mission / President -->
+<section class="section" id="about">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <h3>About Us</h3>
+        <p>
+          NABA UIUC is a student chapter of the National Association of Black Accountants. We connect students with career opportunities, professional development, and a strong community across accounting, finance, consulting, data, and related fields.
+        </p>
+      </div>
+    </div>
+    <div class="col-6" id="prospective">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          We engage, empower, and educate Black Business Leaders and institutions by providing a platform to enhance skills and elevate voices. Our 5 Es: engage, empower, educate, enhance, and elevate. Doing so, we’re “lifting as we climb.”
+        </p>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card president">
+        <img src="photos/headshots/headshot.jpeg" alt="Chapter President">
         <div>
-            <h1 class="h3 m-0 fw-bold">National Association of Black Accountants UIUC Chapter</h1>
-            <div class="muted">Website Under Construction</div>
+          <h3>President’s Letter</h3>
+          <p>
+            Welcome to NABA UIUC! We’re excited to support your growth and help you find your path in business. Whether you’re exploring majors or preparing for internships, there’s a place for you here. Join an event, meet the board, and let’s build together.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section class="section" id="video">
+  <div class="card">
+    <h3>Watch Our Story</h3>
+    <iframe class="video" src="https://www.youtube.com/embed/jtdHuXcu3J0?rel=0" title="NABA UIUC Intro Video" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Current Events (card grid format) -->
+<section id="events">
+  <div class="wrap">
+    <h2 class="section-title">Current Events</h2>
+    <div class="events-grid">
+      <article class="card event">
+        <span class="pill">Aug 29 • 6:00 PM</span>
+        <h4>Fall Kickoff & Info Night</h4>
+        <p class="muted">Meet the e‑board, hear about programs, and connect with sponsors.</p>
+      </article>
+      <article class="card event">
+        <span class="pill">Sep 5 • 5:30 PM</span>
+        <h4>Resume & LinkedIn Workshop</h4>
+        <p class="muted">Get review support from upperclassmen and alumni.</p>
+      </article>
+      <article class="card event">
+        <span class="pill">Sep 12 • 6:00 PM</span>
+        <h4>Corporate Panel: Audit vs. Advisory</h4>
+        <p class="muted">Hear from firm reps and ask questions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Executive Board -->
+<section class="section" id="board">
+  <h3 class="section-title">Executive Board</h3>
+  <div class="board-grid">
+    <div class="member">
+      <img src="photos/headshots/headshot.jpeg" alt="Board Member">
+      <h4>Titus Lee</h4>
+      <small>President</small>
+      <a class="linkedin" href="https://www.linkedin.com/in/titus-lee-427b33300" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+      </a>
+    </div>
+      <div class="member">
+          <img src="photos/headshots/Grace-Griffin.jpeg" alt="Board Member">
+          <h4>Grace Griffin</h4>
+          <small>Vice President</small>
+          <a class="linkedin" href="https://www.linkedin.com/in/grace-simone-griffin-3665b3321" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+          </a>
+      </div>
+      <div class="member">
+          <img src="photos/headshots/Christiana-Booker.jpeg" alt="Board Member">
+          <h4>Christiana Booker</h4>
+          <small>Social chair</small>
+          <a class="linkedin" href="https://www.linkedin.com/in/Christiana-Booker" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+          </a>
+      </div>
+    <div class="member">
+      <img src="photos/headshots/Muhais-Olatundun.jpg" alt="Board Member">
+      <h4>Muhais Olatundun</h4>
+      <small>Communications Chair</small>
+      <a class="linkedin" href="https://www.linkedin.com/in/muhais-olatundun" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+      </a>
+    </div>
+      <div class="member">
+          <img src="photos/headshots/Aaliyah-Polite.jpeg" alt="Board Member">
+          <h4>Aaliyah Polite</h4>
+          <small>Publicity Chair</small>
+          <a class="linkedin" href="https://www.linkedin.com/in/aaliyah-polite" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+          </a>
+      </div>
+    <div class="member">
+      <img src="photos/headshots/headshot.jpeg" alt="Board Member">
+      <h4>Ryan Lewis</h4>
+      <small>Treasurer</small>
+      <a class="linkedin" href="https://www.linkedin.com/in/ryan-i-lewis/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+      </a>
+    </div>
+      <div class="member">
+          <img src="photos/headshots/jimi-ogunyoye.png" alt="Board Member">
+          <h4>Oluwajimi (Jimi) Ogunyoye</h4>
+          <small>Secretary</small>
+          <a class="linkedin" href="https://www.linkedin.com/in/oluwajimi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+          </a>
+      </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="cta">
+  <div class="wrap">
+    <h2 class="section-title">Still have questions? <span style="color:var(--uiuccolor)">Go Illini!</span></h2>
+    <p class="muted">We respond fast — reach us anytime.</p>
+    <p><a class="btn btn-primary" href="mailto:uiucnaba@gmail.com">Email uiucnaba@gmail.com</a></p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="foot">
+        <small>© <span id="year"></span> NABA University of Illinois Urbana-Champaign Chapter. All rights reserved.</small>
+        <div class="social">
+            <a href="https://www.instagram.com/nabauiuc/" aria-label="Instagram" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:uiucnaba@gmail.com" aria-label="Email uiucnaba@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </div>
+</footer>
 
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-            <section class="glass p-4 p-md-5">
-                <div class="row align-items-center g-4">
-                    <div class="col-12 col-md-7">
-                        <h2 class="display-6 fw-bold">
-                            We’re launching <span style="color:var(--naba-gold)">
-                            <br>
-                            September 1, 2025 at 5:00 PM</span>
-                        </h2>
-                        <p class="lead muted mb-4">
-                            We’re building a new experience for our members, partners, and community.
-                        </p>
-
-                        <!-- Countdown -->
-                        <div id="countdown" class="countdown d-flex flex-wrap gap-2 mb-4"></div>
-
-                        <!-- Progress to launch (now manually controllable) -->
-                        <div class="mb-2 d-flex justify-content-between">
-                            <small class="muted">Progress to Launch</small>
-                            <small id="progressLabel" class="muted"></small>
-                        </div>
-                        <div class="progress mb-2" role="progressbar" aria-label="Progress to launch" aria-valuemin="0" aria-valuemax="100">
-                            <div id="progressBar" class="progress-bar" style="width:0%"></div>
-                        </div>
-                        <!-- LinkedIn credit -->
-                        <small class="d-block mt-2">
-                            <a href="https://www.linkedin.com/in/muhais-olatundun"
-                               target="_blank" rel="noopener noreferrer"
-                               style="color:var(--naba-gold); text-decoration:none; font-weight:500;">
-                                <i class="bi bi-linkedin me-1"></i> Meet the developer on LinkedIn →
-                            </a>
-                        </small>
-
-                        <!-- Socials -->
-                        <div class="social d-flex gap-3 mt-4">
-                            <a href="https://www.instagram.com/nabauiuc?" target="_blank" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
-                            <a href="mailto:info@uiucnaba@gmail.com" target="_blank" aria-label="Email"><i class="bi bi-envelope-fill fs-4"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-5">
-                        <div class="glass p-4 h-100 d-grid align-content-center">
-                            <div class="text-center">
-                                <i class="bi bi-cone-striped display-3" style="color:var(--naba-gold)"></i>
-                                <h3 class="h5 mt-3">Pardon our dust</h3>
-                                <p class="muted mb-0">Pages, events, and member tools are getting a fresh coat of paint.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
-                <small class="muted">© <span id="year"></span> NABA UIUC</small>
-                <small><a href="mailto:info@uiucnaba@gmail.com">Contact</a></small>
-<!--                <small><a href="#">Contact</a> · <a href="#">Privacy</a></small>-->
-            </footer>
-        </div>
-    </div>
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="Progress/underconstruction.js" type="module"></script>
-</body>
-</html>
-
+<script src="script.js"></script>
+ </body>
+ </html>
