@@ -31,7 +31,6 @@ html,body{
 
 
 a{color:#c9b7ff;text-decoration:none}
-a:hover{text-decoration:underline}
 
 /* Header */
 .header{position:sticky;
@@ -417,11 +416,23 @@ body {
     animation: slideUpFadeIn 0.7s ease-out 0.2s forwards;
 }
 
-/*Linkedln color for icons*/
+
+
+/* LinkedIn hover effect on desktop only */
 .linkedin{
     color:#0077B5;
 }
-
+@media (hover: hover) and (pointer: fine) {
+    .member .linkedin:hover {
+        background: #0077B5; /* LinkedIn blue background */
+        color: #fff; /* White text */
+        border-color: #005582; /* Darker blue border */
+        transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    }
+    .member .linkedin:hover i {
+        color: #fff; /* Make icon white on hover */
+    }
+}
 
 /* Remove underline for nav + dropdown links */
 .menu .nav-link:hover,
@@ -431,8 +442,11 @@ body {
 #mobileMenu a,
 #mobileMenu a:hover,
 #mobileMenu .dropdown-item,
-#mobileMenu .dropdown-item:hover
-.a
-.icon-link:hover{
+#mobileMenu .dropdown-item:hover,
+.brand:hover,
+.brand span:hover,
+.icon-link:hover {
     text-decoration: none;
 }
+
+
