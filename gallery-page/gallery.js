@@ -14,11 +14,12 @@
 
     function openLightbox(img) {
         clearTimeout(closingTimer);
-        lightbox.classList.remove('closing');       // ensure not in closing state
+        lightbox.classList.remove('closing'); // ensure not in closing state
         lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
+        lightboxImg.alt = img.alt || '';
         lightboxCaption.textContent =
-            (img.closest('.gallery-page-item')?.querySelector('.gallery-page-caption')?.textContent) ||
+            (img.closest('.gallery-item')?.dataset.caption) ||
+            (img.closest('.gallery-item')?.querySelector('.gallery-caption')?.textContent?.trim()) ||
             img.alt || '';
         // trigger open on next frame for smooth transition
         requestAnimationFrame(() => {
@@ -38,12 +39,14 @@
         }, 260); // match CSS .26s
     }
 
-    function escClose(e) { if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); }
+    function escClose(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    }
 
     function bind() {
         if (bound) return;
         handlers = [];
-        document.querySelectorAll('.gallery-page-item img').forEach(img => {
+        document.querySelectorAll('.gallery-item img').forEach(img => {
             const h = () => openLightbox(img);
             img.style.cursor = 'zoom-in';
             img.addEventListener('click', h);
