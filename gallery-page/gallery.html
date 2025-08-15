@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery • NABA UIUC</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
 
 <!-- Header -->
 <header class="header">
     <nav class="nav">
-        <a class="brand" href="../naba.html#home">
+        <a class="brand" href="../naba.html">
             <img src="../photos/logo.jpeg" alt="NABA UIUC logo" />
             <span>NABA<span class="nav-uiuc"> UIUC</span></span>
         </a>
@@ -29,8 +30,8 @@
             <a class="nav-link" href="../sponsor-page/sponsors-prospective.html">Become a Sponsor</a>
             <a class="nav-link" href="../naba.html#board">Executive Board</a>
             <a class="nav-link" href="../naba.html#contact">Contact Us</a>
-            <a class="nav-link active" href="gallery.html">Gallery</a>
-            <a class="icon-link" href="https://www.instagram.com/nabauiuc/" target="_blank" aria-label="Instagram" rel="noopener">
+            <a class="nav-link active" href="./gallery.html">Gallery</a>
+            <a class="icon-link" href="https://www.instagram.com/nabauiuc/" target="_blank" rel="noopener" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
@@ -43,98 +44,111 @@
         <a href="../sponsor-page/sponsors-prospective.html">Become a Sponsor</a>
         <a href="../naba.html#board">Executive Board</a>
         <a href="../naba.html#contact">Contact Us</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="./gallery.html">Gallery</a>
         <a href="https://www.instagram.com/nabauiuc/" target="_blank" rel="noopener">Instagram</a>
     </div>
 </header>
 
-<!-- Gallery -->
-<section class="section" id="gallery">
-    <h2 class="section-title">Gallery</h2>
-    <p class="muted">Highlights from our events.</p>
+<main class="section gallery-page">
+    <h1 class="big-title">Gallery</h1>
+    <p class="muted lead" style="text-align:center; max-width:900px; margin:8px auto 0;">
+        Snapshots from NABA UIUC programs, conferences, and campus life.
+    </p>
 
-    <!-- Album: 2024 NABA Conference -->
-    <h3 class="album-title">2024 NABA Conference</h3>
+    <!--Album: 2024 NABA Conference -->
+    <h2 class="album-title">2024 NABA Conference</h2>
     <div class="gallery-grid">
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/2024-naba-conference/photo1.jpg" alt="#">
-<!--            <div class="gallery-caption">Opening Session</div>-->
+<!--            <div class="gallery-caption">Group photo at the 2024 NABA Conference</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/2024-naba-conference/photo2.jpg" alt="#">
-<!--            <div class="gallery-caption">Networking</div>-->
+<!--            <div class="gallery-caption">Student panel — learning and networking</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/2024-naba-conference/photo3.jpg" alt="#">
-<!--            <div class="gallery-caption">Panel Talk</div>-->
+<!--            <div class="gallery-caption">Career fair — connecting with sponsors</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/2024-naba-conference/photo4.jpg" alt="#">
+<!--            <div class="gallery-caption">Skill-building workshop in progress</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
-            <img src="../photos/2024-naba-conference/photo5.jpg" alt="#">
-        </div>
-    </div>
-
-<br>
-    <!-- Album: Organization Fair -->
-    <h3 class="album-title">Organization Fair</h3>
-    <div class="gallery-grid">
-        <div class="gallery-item" data-caption="Our Booth">
-            <img src="/photos/organization-fair/photo1.jpg" alt="Organization Fair — Our Booth">
-<!--            <div class="gallery-caption">Our Booth</div>-->
-        </div>
-        <div class="gallery-item" data-caption="#">
-            <img src="/photos/organization-fair/photo2.jpg" alt="Organization Fair — Visitors">
-<!--            <div class="gallery-caption">Visitors</div>-->
+        <div class="gallery-item">
+            <img src="../photos/2024-naba-conference/photo5.jpg" alt="#n">
+<!--            <div class="gallery-caption">Evening reception with alumni and partners</div>-->
         </div>
     </div>
 
-<br>
-    <!-- Album: Photo-Shoot -->
-    <h3 class="album-title">Photo-Shoot</h3>
+    <!-- ===== Album: Organization Fair ===== -->
+    <h2 class="album-title">Organization Fair</h2>
     <div class="gallery-grid">
-        <div class="gallery-item" data-caption="Team Portrait">
+        <div class="gallery-item">
+            <img src="../photos/organization-fair/photo1.jpg" alt="#">
+<!--            <div class="gallery-caption">Our booth at the Organization Fair</div>-->
+        </div>
+        <div class="gallery-item">
+            <img src="../photos/organization-fair/photo2.jpg" alt="#">
+<!--            <div class="gallery-caption">Visitors at our table</div>-->
+        </div>
+    </div>
+
+    <!-- ===== Album: Photo Shoot ===== -->
+    <h2 class="album-title">Photo Shoot</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
             <img src="../photos/photo-shoot/photo1.jpg" alt="#">
-<!--            <div class="gallery-caption">Team Portrait</div>-->
+<!--            <div class="gallery-caption">Team portrait day</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/photo-shoot/photo2.jpg" alt="#">
+<!--            <div class="gallery-caption">Candid moments on the Quad</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/photo-shoot/photo3.jpg" alt="#">
+<!--            <div class="gallery-caption">Smiles all around</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/photo-shoot/photo4.jpg" alt="#">
+<!--            <div class="gallery-caption">Outtakes &amp; laughs</div>-->
         </div>
-        <div class="gallery-item" data-caption="#">
+        <div class="gallery-item">
             <img src="../photos/photo-shoot/photo5.jpg" alt="#">
+<!--            <div class="gallery-caption">Closing shot — thank you to our photographers</div>-->
         </div>
     </div>
-</section>
+</main>
 
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
-    <div class="lightbox-inner">
-        <img class="lightbox-img" alt="">
-        <div class="lightbox-caption"></div>
-        <button class="lightbox-close" type="button" aria-label="Close">Close</button>
-    </div>
-</div>
+<br>
 
 <!-- Footer -->
 <footer>
     <div class="foot">
         <small>© <span id="year"></span> NABA University of Illinois Urbana-Champaign Chapter. All rights reserved.</small>
         <div class="social">
-            <a href="https://www.instagram.com/nabauiuc/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:uiucnaba@gmail.com" aria-label="Email uiucnaba@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/nabauiuc/" aria-label="Instagram" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:uiucnaba@gmail.com" aria-label="Email uiucnaba@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </div>
 </footer>
 
-<!-- Scripts -->
-<script src="gallery.js"></script>
-<script src="../script.js"></script>
+<!-- Helper for footer year + mobile menu -->
+<script>
+    (function () {
+        var y = document.getElementById('year');
+        if (y) y.textContent = new Date().getFullYear();
+        var h = document.getElementById('hamburger'), m = document.getElementById('mobileMenu');
+        if (h && m) h.addEventListener('click', function () {
+            var ex = h.getAttribute('aria-expanded') === 'true';
+            h.setAttribute('aria-expanded', String(!ex));
+            m.classList.toggle('open');
+            h.classList.toggle('active');
+        });
+    })();
+</script>
 </body>
 </html>
