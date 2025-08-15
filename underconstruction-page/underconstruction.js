@@ -1,11 +1,11 @@
-// ===== Launch time: Sept 1, 2025 5:00 PM CT =====
+//  Launch time: Sept 1, 2025 5:00 PM CT
 const LAUNCH = new Date("2025-09-01T17:00:00-05:00");
 
-// --- Helper Functions ---
+//  Helper Functions
 const pad = n => String(n).padStart(2, "0");
 const $ = id => document.getElementById(id);
 
-// --- Store the interval ID so we can stop it later ---
+// Store the interval ID so we can stop it later ---
 const countdownInterval = setInterval(render, 1000);
 
 function render() {
@@ -39,9 +39,8 @@ function render() {
         <span class="slot d-inline-block text-center"><div class="h2 m-0" style="color:var(--naba-gold)">${pad(s)}</div><div class="label">Seconds</div></span>
     `;
 
-    // The recursive call to render() has been removed from here.
 }
 
-// --- Initial Render & Setup ---
+//  Initial Render & Setup
 render(); // Run once immediately on page load
 $("year").textContent = new Date().getFullYear();
