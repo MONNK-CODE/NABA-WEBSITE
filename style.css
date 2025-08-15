@@ -85,6 +85,10 @@ a{color:#c9b7ff;text-decoration:none}
 }
 .icon-link svg{fill:#fff}
 
+.nav-uiuc {
+    color:var(--uiuccolor);
+}
+
 
 /* mobile */
 .hamburger{
