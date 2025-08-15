@@ -12,7 +12,7 @@ function render() {
     const now = new Date();
     const diff = LAUNCH.getTime() - now.getTime();
 
-    // ==== 1. Handle countdown completion ====
+    // Handle countdown completion
     if (diff <= 0) {
         clearInterval(countdownInterval); // Stop the timer
         $("countdown").innerHTML = `
@@ -24,17 +24,14 @@ function render() {
         return; // Exit the function
     }
 
-    // --- Calculate time remaining ---
+    // Calculate time remaining
     let remaining = diff;
-    const d = Math.floor(remaining / (1000 * 60 * 60 * 24));
-    remaining %= (1000 * 60 * 60 * 24);
-    const h = Math.floor(remaining / (1000 * 60 * 60));
-    remaining %= (1000 * 60 * 60);
-    const m = Math.floor(remaining / (1000 * 60));
-    remaining %= (1000 * 60);
+    const d = Math.floor(remaining / (1000 * 60 * 60 * 24)); remaining %= (1000 * 60 * 60 * 24);
+    const h = Math.floor(remaining / (1000 * 60 * 60));    remaining %= (1000 * 60 * 60);
+    const m = Math.floor(remaining / (1000 * 60));       remaining %= (1000 * 60);
     const s = Math.floor(remaining / 1000);
 
-    // --- Update the countdown display ---
+    // Update the countdown display
     $("countdown").innerHTML = `
         <span class="slot d-inline-block text-center"><div class="h2 m-0" style="color:var(--naba-green)">${pad(d)}</div><div class="label">Days</div></span>
         <span class="slot d-inline-block text-center"><div class="h2 m-0" style="color:var(--naba-gold)">${pad(h)}</div><div class="label">Hours</div></span>
@@ -42,8 +39,9 @@ function render() {
         <span class="slot d-inline-block text-center"><div class="h2 m-0" style="color:var(--naba-gold)">${pad(s)}</div><div class="label">Seconds</div></span>
     `;
 
+    // The recursive call to render() has been removed from here.
+}
 
 // --- Initial Render & Setup ---
-    render();
-    $("year").textContent = new Date().getFullYear();
-}
+render(); // Run once immediately on page load
+$("year").textContent = new Date().getFullYear();
