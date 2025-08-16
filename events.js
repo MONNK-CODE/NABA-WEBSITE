@@ -65,15 +65,34 @@
     }
 
     // helpers
-    function formatWhen(isoLike, timeZone) {
-        // All-day (YYYY-MM-DD) vs timed (ISO datetime)
-        const isAllDay = isoLike.length <= 10;
-        const d = new Date(isoLike);
+    // function formatWhen(isoLike, timeZone) {
+    //     // All-day (YYYY-MM-DD) vs timed (ISO datetime)
+    //     const isAllDay = isoLike.length <= 10;
+    //     const d = new Date(isoLike);
+    //     if (isAllDay) {
+    //         return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
+    //     } else {
+    //         const day  = d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
+    //         const time = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone });
+    //         return `${day} • ${time}`;
+    //     }
+    // }
+
+    function formatWhen(startISO, endISO, timeZone) {
+        const isAllDay = startISO.length <= 10;  // all-day event if just YYYY-MM-DD
+        const start = new Date(startISO);
+        const end   = endISO ? new Date(endISO) : null;
+
         if (isAllDay) {
-            return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
+            // all-day event: just show the day (e.g. Sep 22)
+            return start.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
         } else {
-            const day  = d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
-            const time = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone });
+            const day  = start.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
+            const time = start.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone });
+            if (end) {
+                const endTime = end.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone });
+                return `${day} • ${time} – ${endTime}`;
+            }
             return `${day} • ${time}`;
         }
     }
