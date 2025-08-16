@@ -44,7 +44,6 @@
             const notes = formatNotes(ev.description || "");
             const loc   = (ev.location || "").trim();
 
-            // Build card with YOUR classes (no extra links)
             const notesHtml = formatNotes(ev.description || "");
             const card = document.createElement("article");
             card.className = "event";
@@ -88,7 +87,7 @@
         const end   = endISO ? new Date(endISO) : null;
 
         if (isAllDay) {
-            // all-day event: just show the day (e.g. Sep 22)
+            // all-day event: just show the day
             return start.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
         } else {
             const day  = start.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });

@@ -138,16 +138,28 @@
 
 <!-- Helper for footer year + mobile menu -->
 <script>
-    (function () {
-        var y = document.getElementById('year');
-        if (y) y.textContent = new Date().getFullYear();
-        var h = document.getElementById('hamburger'), m = document.getElementById('mobileMenu');
-        if (h && m) h.addEventListener('click', function () {
-            var ex = h.getAttribute('aria-expanded') === 'true';
-            h.setAttribute('aria-expanded', String(!ex));
-            m.classList.toggle('open');
-            h.classList.toggle('active');
-        });
+    (() => {
+        const updateFooterYear = () => {
+            const yearEl = document.getElementById('year');
+            if (!yearEl) return;
+            const currentYear = new Date().getFullYear();
+            yearEl.textContent = String(currentYear);
+        };
+
+        const setupMobileMenuToggle = () => {
+            const hamburgerButton = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (!hamburgerButton || !mobileMenu) return;
+
+            hamburgerButton.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('open');
+                hamburgerButton.classList.toggle('active', isOpen);
+                hamburgerButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        };
+
+        updateFooterYear();
+        setupMobileMenuToggle();
     })();
 </script>
 </body>

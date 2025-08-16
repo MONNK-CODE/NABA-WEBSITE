@@ -19,5 +19,3 @@ document.querySelectorAll('#mobileMenu a').forEach(a => {
 
 // footer year
 document.getElementById('year').textContent = new Date().getFullYear();
-
-
