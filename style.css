@@ -455,3 +455,25 @@ body {
 }
 
 
+
+
+/*Events Tweak*/
+.card.event .muted,
+.event .muted{
+    white-space: normal;      /* allow wrapping */
+    overflow-wrap: anywhere;  /* break super-long tokens */
+}
+
+
+.event .muted a {
+    color: var(--naba-gold, #ffd36b);
+    text-decoration: underline;
+}
+.event .muted a:hover {
+    filter: brightness(1.15);
+}
+
+
+/*!* stop cards from stretching to row height *!*/
+/*.events-grid { align-items: start; }     !* applies to all children *!*/
+/*.event { align-self: start; height:auto; min-height:0; }*/
