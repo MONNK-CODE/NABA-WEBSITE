@@ -34,8 +34,12 @@
             .sort((a, b) => new Date(a.start.dateTime || a.start.date) - new Date(b.start.dateTime || b.start.date));
 
         items.forEach(ev => {
-            const startISO = ev.start.dateTime || ev.start.date;  // date = all-day
-            const when = formatWhen(startISO, tz);
+            // const startISO = ev.start.dateTime || ev.start.date;  // date = all-day
+            // const when = formatWhen(startISO, tz);
+            const startISO = ev.start.dateTime || ev.start.date;
+            const endISO   = ev.end?.dateTime || ev.end?.date;
+            const when = formatWhen(startISO, endISO, tz);
+
             const title = (ev.summary || "Untitled Event").trim();
             const notes = formatNotes(ev.description || "");
             const loc   = (ev.location || "").trim();
