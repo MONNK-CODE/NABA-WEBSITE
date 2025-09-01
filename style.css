@@ -347,6 +347,9 @@ footer{
 
 /* responsive */
 @media (max-width: 1000px){
+    .president-letter {
+       font-size: 0.8rem;
+    }
     .menu{
         display:none
     }
