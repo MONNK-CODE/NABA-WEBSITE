@@ -2,7 +2,7 @@
     const calendarId = "c5392c6d0fc49bad7e5f1a25667fa694d0d4145594ea342acd2680a4999fdecf@group.calendar.google.com";
     const apiKey     = "AIzaSyCWSvaysAMq_lFnFO0svrz0FaaoQIDW3hs";
     const timeMin    = new Date().toISOString();
-    const maxResults = 4;
+    const maxResults = 3;
     const tz         = "America/Chicago";
 
     const url = new URL(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events`);
