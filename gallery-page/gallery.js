@@ -16,6 +16,25 @@ function createGallery(containerId, folder, files, altText) {
     });
 }
 
+
+
+
+/* ===== NABA E-BOARD FALL 2025 ===== */
+createGallery(
+    "photo-fall2025",
+    "photo-fall2025",
+    [
+        "_DSC9598.jpg",
+        "_DSC9600.jpg",
+        "_DSC9608.jpg",
+        "_DSC9612.jpg",
+        "_DSC9668.jpg"
+    ],
+    "NABA E-BOARD FALL 2025 PHOTOSHOOT"
+);
+
+
+
 /* ===== EY EVENT ===== */
 createGallery(
     "ey-event-gallery",
@@ -93,3 +112,4 @@ createGallery(
     ],
     "PwC event photo"
 );
+
