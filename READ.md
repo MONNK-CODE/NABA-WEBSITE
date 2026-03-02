@@ -1,5 +1,12 @@
 # NABA UIUC Chapter Website
 
+## Developed By
+
+This platform was designed and developed by **Muhais Olatundun**. As a developer and member of the UIUC community, I built this to streamline the chapters operations and enhance our digital presence.
+
+* **Website:** [muhais.org](https://muhais.org)
+* **LinkedIn:** [Muhais Olatundun](https://www.linkedin.com/in/muhais-olatundun/)
+
 The official website for the **National Association of Black Accountants (NABA)** at the **University of Illinois Urbana-Champaign (UIUC)**. This platform serves as a hub for members, prospective students, and corporate sponsors to engage with the chapter, track events, and learn about the mission of professional excellence.
 
 ## Overview
