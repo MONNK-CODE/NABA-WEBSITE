@@ -67,20 +67,6 @@
         grid.innerHTML = `<p class="muted">Unable to load events right now.</p>`;
     }
 
-    // helpers
-    // function formatWhen(isoLike, timeZone) {
-    //     // All-day (YYYY-MM-DD) vs timed (ISO datetime)
-    //     const isAllDay = isoLike.length <= 10;
-    //     const d = new Date(isoLike);
-    //     if (isAllDay) {
-    //         return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
-    //     } else {
-    //         const day  = d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone });
-    //         const time = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone });
-    //         return `${day} • ${time}`;
-    //     }
-    // }
-
     function formatWhen(startISO, endISO, timeZone) {
         const isAllDay = startISO.length <= 10;  // all-day event if just YYYY-MM-DD
         const start = new Date(startISO);
